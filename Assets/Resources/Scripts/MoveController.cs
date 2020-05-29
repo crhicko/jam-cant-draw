@@ -6,7 +6,10 @@ using UnityEngine.InputSystem;
 public class MoveController : MonoBehaviour
 {
 
+    Rigidbody2D rigidbody2D;
+
     void Awake() {
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
     // Start is called before the first frame update
     void Start()
@@ -20,7 +23,4 @@ public class MoveController : MonoBehaviour
 
     }
 
-    public void RotateLeft(InputAction.CallbackContext context) {
-        Debug.Log("rotating left");
-    }
 }

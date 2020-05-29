@@ -6,9 +6,17 @@
             "id": "d1d80ade-395a-4587-9f8d-b8f30848f39a",
             "actions": [
                 {
-                    "name": "Rotate",
+                    "name": "RotateLeft",
                     "type": "Button",
                     "id": "7376a686-72e4-474c-a9ed-2ab4611c5035",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
+                },
+                {
+                    "name": "RotateRight",
+                    "type": "Button",
+                    "id": "05889d85-c95c-485f-8acc-f4c017b56af3",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -22,18 +30,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate",
+                    "action": "RotateLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "250cb3e1-d231-4132-aa2d-28eea0e50e0e",
-                    "path": "",
-                    "interactions": "",
+                    "id": "071573d2-2ecd-4a94-ad4a-0bec401687c4",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate",
+                    "action": "RotateRight",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

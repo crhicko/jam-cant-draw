@@ -1,0 +1,44 @@
+{
+    "name": "InputMaster",
+    "maps": [
+        {
+            "name": "Keyboard",
+            "id": "d1d80ade-395a-4587-9f8d-b8f30848f39a",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "Button",
+                    "id": "7376a686-72e4-474c-a9ed-2ab4611c5035",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "29c2b8f9-6fc4-40ef-b12b-acd1aade55c5",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "250cb3e1-d231-4132-aa2d-28eea0e50e0e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

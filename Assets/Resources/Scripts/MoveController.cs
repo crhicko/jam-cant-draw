@@ -7,11 +7,6 @@ public class MoveController : MonoBehaviour
 {
 
     Rigidbody2D rb;
-
-    private bool isPressedLeft = false;
-    private bool isPressedRight = false;
-    private bool isPressedUp = false;
-    private bool isPressedDown = false;
     private bool isMovePressed = false;
 
     Vector2 moveDir;

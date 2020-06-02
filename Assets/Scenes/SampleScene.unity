@@ -459,6 +459,17 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5485101251805975016, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889261269328616965, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: flipper
+      value: 
+      objectReference: {fileID: 3311388958562235895, guid: 8656bef2f8c4b2d46affdb445ed998d8,
+        type: 3}
     - target: {fileID: 7600594909835280432, guid: 8446f00138ddfbd4ebf1cac553d9608d,
         type: 3}
       propertyPath: m_Name

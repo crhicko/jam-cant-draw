@@ -9,8 +9,10 @@ public class FlipperAttachment : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(flipper != null)
-            Instantiate(flipper, new Vector3(0, 0, 0), Quaternion.identity);
+        if(flipper != null) {
+            GameObject obj = Instantiate(flipper, transform);
+            obj.transform.parent = transform;
+        }
     }
 
     // Update is called once per frame

@@ -35,6 +35,7 @@ Transform:
   - {fileID: 5263175554925499269}
   - {fileID: 4424387651567218651}
   - {fileID: 1836270592302279712}
+  - {fileID: 5503883712628595076}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104,6 +105,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: West Rink Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408157643533574326, guid: a4e50a073201cc249bc3988e7e4b3e96,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4e50a073201cc249bc3988e7e4b3e96, type: 3}
@@ -187,6 +193,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2602283985403656097, guid: 08fe8f02b66b66f409bc905d650d93c4,
     type: 3}
   m_PrefabInstance: {fileID: 1836270592524146810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3108104883663784760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4424387651038016337}
+    m_Modifications:
+    - target: {fileID: 4592564122128308611, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_Name
+      value: Middle Line
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.684
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9457126
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e553818d7891eb2429ca768c0231201f, type: 3}
+--- !u!4 &5503883712628595076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7440947139781776060, guid: e553818d7891eb2429ca768c0231201f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3108104883663784760}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4424387651257534372
 PrefabInstance:
@@ -554,6 +635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: East Rink Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408157643533574326, guid: a4e50a073201cc249bc3988e7e4b3e96,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4e50a073201cc249bc3988e7e4b3e96, type: 3}

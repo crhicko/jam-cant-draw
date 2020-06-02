@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: 8435633473978787277
     second: flatpaddle-Sheet_1
+  - first:
+      213: -3694926886067913512
+    second: flatpaddle-Sheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -153,7 +156,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 100
-        height: 20
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +177,7 @@ TextureImporter:
         x: 100
         y: 0
         width: 100
-        height: 20
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,6 +187,27 @@ TextureImporter:
       bones: []
       spriteID: dc566ef53f3611570800000000000000
       internalID: 8435633473978787277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flatpaddle-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcb1ecd29bf8bcc0800000000000000
+      internalID: -3694926886067913512
       vertices: []
       indices: 
       edges: []

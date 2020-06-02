@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7767070358133183603}
   - component: {fileID: 7171990572050493627}
   - component: {fileID: 1637903904674381757}
-  - component: {fileID: 786159499695902282}
+  - component: {fileID: 8019267395697385525}
   m_Layer: 0
   m_Name: FlipperBase
   m_TagString: Untagged
@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23ffda8583ffe24bb54e7fded18ce31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 8019267395697385525}
+  triggerAnimation: 1
 --- !u!212 &1637903904674381757
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96,7 +98,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &786159499695902282
+--- !u!95 &8019267395697385525
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -106,7 +108,7 @@ Animator:
   m_GameObject: {fileID: 3311388958562235895}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5f6f5afb0e9d6ac4db6ec0c2dff96b5e, type: 2}
+  m_Controller: {fileID: 9100000, guid: b83e81db6259485479208feb94607562, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

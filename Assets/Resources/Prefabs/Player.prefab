@@ -369,7 +369,7 @@ PrefabInstance:
     - target: {fileID: 3740209268544801790, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_Name
-      value: FlipperAttachment Left
+      value: FlipperAttachmentLeft
       objectReference: {fileID: 0}
     - target: {fileID: 5695165994258840768, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
@@ -471,6 +471,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
@@ -563,6 +568,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_ActionName
       value: Keyboard/ActivateLeftFlipper[/Keyboard/4]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4801968271211983693}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnInput
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3740209268544801790, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}

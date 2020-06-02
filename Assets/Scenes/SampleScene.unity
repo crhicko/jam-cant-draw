@@ -337,6 +337,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1984482152890662098, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: flipper
+      value: 
+      objectReference: {fileID: 8581904785655879845, guid: 291f2d8fa87887840b451540091f5b5c,
+        type: 3}
     - target: {fileID: 7600594909835280432, guid: 8446f00138ddfbd4ebf1cac553d9608d,
         type: 3}
       propertyPath: m_Name

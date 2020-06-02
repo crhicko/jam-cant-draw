@@ -11,7 +11,6 @@ public class FlipperAttachment : MonoBehaviour
     {
         if(flipper != null) {
             GameObject obj = Instantiate(flipper, transform);
-            obj.transform.parent = transform;
         }
     }
 

@@ -273,38 +273,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1238259905 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7600594909835280432, guid: 8446f00138ddfbd4ebf1cac553d9608d,
-    type: 3}
-  m_PrefabInstance: {fileID: 265730200}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1238259906
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1238259905}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!1 &929490539
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,11 +380,25 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &929490543
 CircleCollider2D:
+=======
+--- !u!1 &1238259905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7600594909835280432, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+    type: 3}
+  m_PrefabInstance: {fileID: 265730200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1238259906
+BoxCollider2D:
+>>>>>>> Got a flipper activation working 
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 929490539}
+=======
+  m_GameObject: {fileID: 1238259905}
+>>>>>>> Got a flipper activation working 
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -615,12 +598,11 @@ PrefabInstance:
     - target: {fileID: 4424387651038016337, guid: 2462e184fccf7c544a95d724e4f77c2e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4424387651038016337, guid: 2462e184fccf7c544a95d724e4f77c2e,
-        type: 3}
-      propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 3
+=======
+      value: 1
+>>>>>>> Got a flipper activation working 
       objectReference: {fileID: 0}
     - target: {fileID: 4424387651038016337, guid: 2462e184fccf7c544a95d724e4f77c2e,
         type: 3}

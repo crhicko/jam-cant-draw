@@ -28,6 +28,14 @@
                     "expectedControlType": "Dpad",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ActivateTopFlipper",
+                    "type": "Button",
+                    "id": "9c16efb7-3763-4084-b0f5-e0430b2a52ef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -107,6 +115,17 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ab4d5b55-352b-4fc0-bfe1-6c08e1fe1633",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActivateTopFlipper",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

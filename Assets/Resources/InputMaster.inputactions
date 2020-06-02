@@ -36,6 +36,30 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ActivateRightFlipper",
+                    "type": "Button",
+                    "id": "b5ba5810-542d-41b8-a766-574f290992c8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ActivateBottomFlipper",
+                    "type": "Button",
+                    "id": "e07cf025-e35e-40c4-b11b-269388416676",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ActivateLeftFlipper",
+                    "type": "Button",
+                    "id": "bf553aa7-8c5a-44c6-82a1-ae283670a069",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -124,6 +148,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "ActivateTopFlipper",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f76660e6-425a-43a3-bd27-11d0fed35778",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActivateRightFlipper",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78373fb6-dc6a-48ed-93d9-45819df17396",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActivateBottomFlipper",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "82e10b34-ddf9-4f5a-9f00-33368df01649",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActivateLeftFlipper",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &177845543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6889261269328616965, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1424498709}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259342e7028e2af47b9e93b8e13de69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +349,111 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionId
+      value: 7376a686-72e4-474c-a9ed-2ab4611c5035
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionName
+      value: Keyboard/RotateLeft[/Keyboard/q]
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
+      value: 05889d85-c95c-485f-8acc-f4c017b56af3
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
+      value: Keyboard/RotateRight[/Keyboard/e]
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: a98de81b-b2de-48a7-a39e-7ef5c1903a3f
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: Keyboard/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
+      value: 9c16efb7-3763-4084-b0f5-e0430b2a52ef
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      value: Keyboard/ActivateTopFlipper[/Keyboard/1]
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      value: b5ba5810-542d-41b8-a766-574f290992c8
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      value: Keyboard/ActivateRightFlipper[/Keyboard/2]
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: e07cf025-e35e-40c4-b11b-269388416676
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: Keyboard/ActivateBottomFlipper[/Keyboard/3]
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: bf553aa7-8c5a-44c6-82a1-ae283670a069
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Keyboard/ActivateLeftFlipper[/Keyboard/4]
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 177845543}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 386192154089851736, guid: 8446f00138ddfbd4ebf1cac553d9608d,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3308415606216471163, guid: 8446f00138ddfbd4ebf1cac553d9608d,
         type: 3}
       propertyPath: m_Size.x

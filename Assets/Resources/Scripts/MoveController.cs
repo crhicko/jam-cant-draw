@@ -45,7 +45,7 @@ public class MoveController : MonoBehaviour
         }
 
         if(isBraking) {
-            rb.velocity *= new Vector2(0.9f, 0.9f);
+            rb.velocity *= new Vector2(0.97f, 0.97f);
         }
 
         if(isDragPressed) {

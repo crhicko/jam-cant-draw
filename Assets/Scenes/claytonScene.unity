@@ -139,6 +139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puck
       objectReference: {fileID: 0}
+    - target: {fileID: 1061022542422798331, guid: 23914c4366cb35147b3e26afe4405501,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1061022542422798333, guid: 23914c4366cb35147b3e26afe4405501,
         type: 3}
       propertyPath: m_Mass
@@ -307,12 +312,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1984482152890662098, guid: 8446f00138ddfbd4ebf1cac553d9608d,
-        type: 3}
-      propertyPath: flipper
-      value: 
-      objectReference: {fileID: 8581904785655879845, guid: 291f2d8fa87887840b451540091f5b5c,
-        type: 3}
     - target: {fileID: 7600594909835280432, guid: 8446f00138ddfbd4ebf1cac553d9608d,
         type: 3}
       propertyPath: m_Name
@@ -436,12 +435,12 @@ PrefabInstance:
         type: 3}
       propertyPath: puck
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 205922558}
     - target: {fileID: 2540039145212106828, guid: 2462e184fccf7c544a95d724e4f77c2e,
         type: 3}
       propertyPath: puck
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 205922558}
     - target: {fileID: 4424387651038016334, guid: 2462e184fccf7c544a95d724e4f77c2e,
         type: 3}
       propertyPath: m_Name

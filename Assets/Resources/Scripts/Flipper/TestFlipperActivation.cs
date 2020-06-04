@@ -21,6 +21,6 @@ public class TestFlipperActivation : MonoBehaviour, IActivatable
     public void Activate() {
         Debug.Log("Activated this lad");
         gameObject.SetActive(true);
-        animator.SetTrigger("isShot");
+
     }
 }

@@ -21,9 +21,6 @@ public class MoveController : MonoBehaviour
     //Used for drawing the points
     Vector3 screenPosition;
     bool isDragPressed;
-    public GameObject endpointPrefab;
-    GameObject startpoint;
-    GameObject endpoint;
 
     LineRenderer lineRenderer;
 
@@ -48,11 +45,13 @@ public class MoveController : MonoBehaviour
         }
 
         if(isBraking) {
-            rb.velocity *= new Vector2(0.97f, 0.97f);
+            rb.velocity *= new Vector2(0.9f, 0.9f);
         }
 
         if(isDragPressed) {
-            lineRenderer.SetPosition(1, Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
+            Vector3 curPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            curPos.z = 0;
+            lineRenderer.SetPosition(1, curPos);
         }
     }
 
@@ -74,7 +73,6 @@ public class MoveController : MonoBehaviour
             startMousePosition = Mouse.current.position.ReadValue();
             Vector3 screenPosition = Camera.main.ScreenToWorldPoint(startMousePosition);
             screenPosition.z = 0;
-            startpoint = Instantiate(endpointPrefab, screenPosition, Quaternion.identity);
             lineRenderer.SetPosition(0, screenPosition);
 
             // Debug.Log(startMousePosition);
@@ -88,7 +86,6 @@ public class MoveController : MonoBehaviour
             rb.velocity = Vector3.zero;
             rb.AddForce(direction);
             isDragPressed = false;
-            Destroy(startpoint);
             lineRenderer.positionCount = 0;
         }
     }

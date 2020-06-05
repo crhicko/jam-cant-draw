@@ -10,7 +10,7 @@ public class FlipperAttachment : MonoBehaviour
     void Start()
     {
         if(flipper != null) {
-            GameObject obj = Instantiate(flipper, transform);
+            GameObject obj = Instantiate(flipper, gameObject.transform);
         }
     }
 

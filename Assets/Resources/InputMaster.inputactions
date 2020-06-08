@@ -22,14 +22,6 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Movement",
-                    "type": "Value",
-                    "id": "a98de81b-b2de-48a7-a39e-7ef5c1903a3f",
-                    "expectedControlType": "Dpad",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "ActivateTopFlipper",
                     "type": "Button",
                     "id": "9c16efb7-3763-4084-b0f5-e0430b2a52ef",
@@ -76,6 +68,38 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "NorthShield",
+                    "type": "Button",
+                    "id": "69b9e312-8953-4efe-8e24-84b21db01c57",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "EastShield",
+                    "type": "Button",
+                    "id": "5fe1227a-3cda-4e44-a4bd-2c88fa382486",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SouthShield",
+                    "type": "Button",
+                    "id": "6f2b3d04-3d80-434d-8ab5-07ece5f979e1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "WestShield",
+                    "type": "Button",
+                    "id": "95c32ce9-9165-472a-984f-d56da85bb131",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -100,61 +124,6 @@
                     "action": "RotateRight",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "2D Vector",
-                    "id": "e923c6dc-dc37-41f9-a62b-49b5d8848488",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "33d1fba9-1b3b-4199-94a8-a0b6822743fe",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "9325d7fd-727b-42ec-ab25-614591a325dd",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "40598c31-1fa4-47e9-8e86-6d26bacdd837",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "ac80c869-c586-438a-b8f5-abcbb8a6b0df",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
@@ -219,6 +188,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8019b92e-f28e-48f8-97f0-26f484057769",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NorthShield",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8749c17f-be26-4ab3-9387-e31c4600b718",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EastShield",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c2dc8ad6-3a30-4b2c-9ee3-f82d98f878be",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SouthShield",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15a6e5c7-8204-4ec8-a574-8c235b56438e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WestShield",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -19,7 +19,7 @@ public class FlipperHitCounter : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-        Debug.Log("Collision detected on: " + gameObject);
+       // Debug.Log("Collision detected on: " + gameObject);
         if(col.collider.name == "Puck")
             numHits++;
     }

@@ -47,7 +47,7 @@ public class HorseshoeShotController : MonoBehaviour
         switch (horseshoeState)
         {
             case HorseshoeState.Moving:
-
+                rb.freezeRotation = false;
                 if(NeedsDestination()){
                     _destination = GenerateNewDestination();
                    // Debug.Log(_destination);
@@ -77,6 +77,7 @@ public class HorseshoeShotController : MonoBehaviour
             case HorseshoeState.WaitingToShoot:
                 animator.ResetTrigger("BeginGenerating");
                 animator.SetTrigger("ReadyToShoot");
+                rb.freezeRotation = true;
                 if(!_waiting)   //this is needed or else we will continuously invoke this due to update, want to find a better way to do ai that doesnt involve this
                     StartCoroutine(WaitToShoot());
                 // horseshoeState = HorseshoeState.Firing;

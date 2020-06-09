@@ -50,7 +50,7 @@ public class HorseshoeShotController : MonoBehaviour
 
                 if(NeedsDestination()){
                     _destination = GenerateNewDestination();
-                    Debug.Log(_destination);
+                   // Debug.Log(_destination);
                 }
 
                 //face the goal
@@ -64,12 +64,12 @@ public class HorseshoeShotController : MonoBehaviour
 
                 if(transform.position == _destination) {
                     horseshoeState = HorseshoeState.Charging;
-                    Debug.Log("go to charging");
+                    //Debug.Log("go to charging");
                 }
 
                 break;
             case HorseshoeState.Charging:
-                Debug.Log("begingernerating");
+               // Debug.Log("begingernerating");
                 animator.SetTrigger("BeginGenerating");
 
                 _destination = Vector3.zero;    //I dont like this, need to make cleaner
@@ -84,7 +84,7 @@ public class HorseshoeShotController : MonoBehaviour
             case HorseshoeState.Firing:
                 GameObject puck = Instantiate(projectile, transform.position + new Vector3(0, -0.6f, 0), Quaternion.identity);
                 puck.GetComponent<Rigidbody2D>().AddForce(faceDirection * 0.01f);
-                Debug.Log("howmuch is this firing");
+                //Debug.Log("howmuch is this firing");
                 animator.ResetTrigger("ReadyToShoot");
                 animator.SetTrigger("ReturnToIdle");
                 horseshoeState = HorseshoeState.Moving;

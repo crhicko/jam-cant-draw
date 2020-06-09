@@ -11,7 +11,7 @@ public class VelocityLimiter : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Debug.Log(rb);
+        //Debug.Log(rb);
     }
 
     // Update is called once per frame

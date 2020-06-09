@@ -25,10 +25,12 @@ public class PuckController : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter2D(Collision2D other)
     {
+        Debug.Log("Collisition Detected");
         if(_teamController.GetTeam() == Team.Enemy) {
-
+            if(other.gameObject.GetComponent<TeamController>().GetTeam() == Team.Player)
+                ChangeTeam(Team.Player);
         }
         else if(_teamController.GetTeam() == Team.Player) {
 
@@ -36,6 +38,7 @@ public class PuckController : MonoBehaviour
     }
 
     private void ChangeTeam(Team team) {
+        Debug.Log("Changing Team to " + team);
         _teamController.SetTeam(team);
         if(team == Team.Player) {
             _spr.sprite = _playerPuck;

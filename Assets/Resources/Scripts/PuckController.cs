@@ -29,7 +29,7 @@ public class PuckController : MonoBehaviour
     {
         Debug.Log("Collisition Detected");
         if(_teamController.GetTeam() == Team.Enemy) {
-            if(other.gameObject.GetComponent<TeamController>().GetTeam() == Team.Player)
+            if(other.gameObject.GetComponent<TeamController>() != null && other.gameObject.GetComponent<TeamController>().GetTeam() == Team.Player)
                 ChangeTeam(Team.Player);
         }
         else if(_teamController.GetTeam() == Team.Player) {

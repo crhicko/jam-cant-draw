@@ -11,13 +11,15 @@ public class ArenaGoal : MonoBehaviour
     public GameObject westShield;
     public GameObject southShield;
 
-    private float shieldTimer = 6.0f;
+    public float shieldTimer = 10.0f;
+
+    public float SHIELD_TIMER_MAX = 10.0f;
     private bool shielding = false;
     PlayerInput playerInput;
     // Start is called before the first frame update
     void Start()
     {
-        
+        shieldTimer = SHIELD_TIMER_MAX;
     }
 
     // Update is called once per frame
@@ -25,8 +27,11 @@ public class ArenaGoal : MonoBehaviour
     {
         if(shielding)
         {
-           
-            if(shieldTimer <= 5.0f && shieldTimer >= 4.0f)
+           if(shieldTimer == SHIELD_TIMER_MAX)
+           {
+               shieldTimer = 0;
+           }
+            if(shieldTimer <= 2.0f && shieldTimer >= 1.0f)
             {
                 foreach(Transform child in transform)
                 {
@@ -37,12 +42,12 @@ public class ArenaGoal : MonoBehaviour
                 }
             }
 
-            shieldTimer -= Time.deltaTime;
+            shieldTimer += Time.deltaTime;
             
-            if(shieldTimer < 0.0f)
+            if(shieldTimer >= SHIELD_TIMER_MAX)
             {
                 shielding = false;
-                shieldTimer = 6.0f;
+                shieldTimer = SHIELD_TIMER_MAX;
             }
         }
     }

@@ -82,7 +82,7 @@ public class HorseshoeShotController : MonoBehaviour
                 // horseshoeState = HorseshoeState.Firing;
                 break;
             case HorseshoeState.Firing:
-                GameObject puck = Instantiate(projectile, transform.position + new Vector3(0, -0.6f, 0), Quaternion.identity);
+                GameObject puck = Instantiate(projectile, transform.GetChild(0).position, Quaternion.identity);
                 puck.GetComponent<Rigidbody2D>().AddForce(faceDirection * 0.01f);
                 //Debug.Log("howmuch is this firing");
                 animator.ResetTrigger("ReadyToShoot");

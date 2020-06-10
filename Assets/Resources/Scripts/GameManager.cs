@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if(_enemyList.Count < _maxEnemyNum) {
+
             GameObject spawnedObj = _portalList[0].transform.GetChild(0).GetComponent<Spawner>().Spawn();
             _enemyList.Add(spawnedObj);
         }

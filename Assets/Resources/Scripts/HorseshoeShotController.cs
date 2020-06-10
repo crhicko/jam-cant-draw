@@ -71,6 +71,10 @@ public class HorseshoeShotController : MonoBehaviour
             case HorseshoeState.Charging:
                // Debug.Log("begingernerating");
                 animator.SetTrigger("BeginGenerating");
+                if(_destination != Vector3.zero) {
+                    rb.velocity = Vector2.zero;
+                    rb.angularVelocity = 0f;
+                }
 
                 _destination = Vector3.zero;    //I dont like this, need to make cleaner
                 break;
@@ -84,7 +88,8 @@ public class HorseshoeShotController : MonoBehaviour
                 break;
             case HorseshoeState.Firing:
                 GameObject puck = Instantiate(projectile, transform.GetChild(0).position, Quaternion.identity);
-                puck.GetComponent<Rigidbody2D>().AddForce(faceDirection * 0.01f);
+                GameManager.Instance._puckList.Add(puck);
+                puck.GetComponent<Rigidbody2D>().AddForce((gameObject.transform.position - goal.transform.position) * 0.01f);
                 //Debug.Log("howmuch is this firing");
                 animator.ResetTrigger("ReadyToShoot");
                 animator.SetTrigger("ReturnToIdle");

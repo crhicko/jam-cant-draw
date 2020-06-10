@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1008426988}
   - component: {fileID: 1084816732726576850}
   - component: {fileID: 4693619480240757232}
+  - component: {fileID: 853873773055113340}
   m_Layer: 9
   m_Name: Puck
   m_TagString: Untagged
@@ -166,3 +167,18 @@ MonoBehaviour:
     type: 3}
   _playerPuck: {fileID: -8916720467403061674, guid: 61c069f04147890478b2bbc3fa5a8cbd,
     type: 3}
+  _maxNumHits: 3
+--- !u!114 &853873773055113340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061022542422798331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc4dd511bfe7ca4cacc74a6272769df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fadeOutTime: 3
+  _material: {fileID: 2100000, guid: 611c53cf1bcd680419b649aa20d7b8ed, type: 2}

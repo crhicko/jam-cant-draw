@@ -11,6 +11,12 @@ public class PuckController : MonoBehaviour
     private Sprite _enemyPuck;
     [SerializeField]
     private Sprite _playerPuck;
+    [SerializeField]
+    private int _maxNumHits;
+
+
+    private int _numHits = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +41,11 @@ public class PuckController : MonoBehaviour
         else if(_teamController.GetTeam() == Team.Player) {
 
         }
+        _numHits++;
+        if(_numHits == _maxNumHits) {
+            Debug.Log("going to fade");
+            GetComponent<FadeOut>().DestroyWithFadeOut();
+        }
     }
 
     private void ChangeTeam(Team team) {
@@ -48,5 +59,6 @@ public class PuckController : MonoBehaviour
         }
     }
 }
+
 
 

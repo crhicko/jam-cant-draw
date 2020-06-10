@@ -134,11 +134,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2728462800859149802, guid: 23914c4366cb35147b3e26afe4405501,
+        type: 3}
+      propertyPath: _fadeOutTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1061022542422798331, guid: 23914c4366cb35147b3e26afe4405501,
         type: 3}
       propertyPath: m_Name
       value: Puck
       objectReference: {fileID: 0}
+    - target: {fileID: 1061022542422798332, guid: 23914c4366cb35147b3e26afe4405501,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1061022542422798334, guid: 23914c4366cb35147b3e26afe4405501,
         type: 3}
       propertyPath: m_LocalPosition.x

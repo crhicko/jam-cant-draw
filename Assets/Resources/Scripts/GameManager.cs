@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public List<GameObject> _portalList = new List<GameObject>();
 
     public int _maxEnemyNum;
-    public int _enemiesPerSpawner;
+    private int numSpawns = 0;
 
     public List<GameObject> _disabledPortalList = new List<GameObject>();
 
@@ -32,10 +32,9 @@ public class GameManager : MonoBehaviour
             Debug.Log("VICTORY");
         }
 
-        if(_enemyList.Count < _maxEnemyNum) {
-
-            GameObject spawnedObj = GetRandomPortal().transform.GetChild(0).GetComponent<Spawner>().Spawn();
-            _enemyList.Add(spawnedObj);
+        if(_enemyList.Count + numSpawns < _maxEnemyNum) {
+            numSpawns++;
+            GetRandomPortal().transform.GetChild(0).GetComponent<Spawner>().Spawn();
         }
 
     }
@@ -48,6 +47,11 @@ public class GameManager : MonoBehaviour
             portal = tempList[Random.Range(0, tempList.Count)];
         } while(!portal.GetComponent<PortalController>().isEnabled);
         return portal;
+    }
+
+    public void AddSpawn(GameObject obj) {
+        _enemyList.Add(obj);
+        numSpawns--;
     }
 
 

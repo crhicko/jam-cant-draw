@@ -26,13 +26,13 @@ public class Spawner : MonoBehaviour
 
     }
 
-    public GameObject Spawn() {
+    public void Spawn() {
         StartCoroutine(SpawnTimer());
-        return _spawnInstantiation;
     }
 
     private IEnumerator SpawnTimer() {
         yield return new WaitForSeconds(_spawnTime);
         _spawnInstantiation = Instantiate(_spawn, gameObject.transform.position, Quaternion.identity);
+        GameManager.Instance.AddSpawn(_spawnInstantiation);
     }
 }

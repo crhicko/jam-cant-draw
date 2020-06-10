@@ -8,11 +8,13 @@ public class FadeOut : MonoBehaviour
     public Material _material;
     private Material _localMaterial;
     private bool _canDissolve = false;
+    public Sprite _dissolvingSprite;
 
     public void DestroyWithFadeOut() {
-
-        gameObject.GetComponent<SpriteRenderer>().material = _material;
-        _localMaterial = gameObject.GetComponent<SpriteRenderer>().material;
+        SpriteRenderer spr = gameObject.GetComponent<SpriteRenderer>();
+        spr.material = _material;
+        spr.sprite = _dissolvingSprite;
+        _localMaterial = spr.material;
         StartCoroutine(FadeOutStep());
     }
 

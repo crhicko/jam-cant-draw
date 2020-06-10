@@ -8,6 +8,15 @@ TextureImporter:
   - first:
       213: -8916720467403061674
     second: puck_1
+  - first:
+      213: 6816820537179359525
+    second: puck_0
+  - first:
+      213: -8796248683392599455
+    second: puck_1
+  - first:
+      213: -1704829556322867470
+    second: puck_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -155,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b1b782e8abd9e890800000000000000
-      internalID: -7428164591969390153
+      spriteID: 529c92859263a9e50800000000000000
+      internalID: 6816820537179359525
       vertices: []
       indices: 
       edges: []
@@ -176,8 +185,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6564cfa4af1714480800000000000000
-      internalID: -8916720467403061674
+      spriteID: 16af26e4d627de580800000000000000
+      internalID: -8796248683392599455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puck_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6e9c41d8a3758e0800000000000000
+      internalID: -1704829556322867470
       vertices: []
       indices: 
       edges: []

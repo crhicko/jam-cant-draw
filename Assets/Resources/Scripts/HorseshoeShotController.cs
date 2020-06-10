@@ -6,7 +6,8 @@ public enum HorseshoeState {
     Moving,
     Charging,
     WaitingToShoot,
-    Firing
+    Firing,
+    PostFireWait
 }
 
 public class HorseshoeShotController : MonoBehaviour
@@ -89,11 +90,14 @@ public class HorseshoeShotController : MonoBehaviour
             case HorseshoeState.Firing:
                 GameObject puck = Instantiate(projectile, transform.GetChild(0).position, Quaternion.identity);
                 GameManager.Instance._puckList.Add(puck);
-                puck.GetComponent<Rigidbody2D>().AddForce((gameObject.transform.position - goal.transform.position) * 0.01f);
+                puck.GetComponent<Rigidbody2D>().AddForce((gameObject.transform.position - goal.transform.position) * -0.01f);
                 //Debug.Log("howmuch is this firing");
                 animator.ResetTrigger("ReadyToShoot");
                 animator.SetTrigger("ReturnToIdle");
-                horseshoeState = HorseshoeState.Moving;
+                horseshoeState = HorseshoeState.PostFireWait;
+                break;
+            case HorseshoeState.PostFireWait:
+                StartCoroutine(WaitAfterFire());
                 break;
             default:
                 break;
@@ -120,5 +124,10 @@ public class HorseshoeShotController : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _waiting = false;
         horseshoeState = HorseshoeState.Firing;
+    }
+
+    private IEnumerator WaitAfterFire() {
+        yield return new WaitForSeconds(1.5f);
+        horseshoeState = HorseshoeState.Moving;
     }
 }

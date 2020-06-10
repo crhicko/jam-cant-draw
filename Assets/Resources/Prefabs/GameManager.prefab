@@ -43,8 +43,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b39bb35401f4b4ab456f6352537f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _puckList: []
+  _puckList:
+  - {fileID: 0}
   _enemyList: []
   _portalList:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _maxEnemyNum: 0
+  _enemiesPerSpawner: 0
+  _disabledPortalList: []

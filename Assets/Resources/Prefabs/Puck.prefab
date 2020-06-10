@@ -182,3 +182,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fadeOutTime: 3
   _material: {fileID: 2100000, guid: 611c53cf1bcd680419b649aa20d7b8ed, type: 2}
+  _dissolvingSprite: {fileID: -1704829556322867470, guid: 61c069f04147890478b2bbc3fa5a8cbd,
+    type: 3}

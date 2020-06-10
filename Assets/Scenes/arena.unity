@@ -144,11 +144,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puck
       objectReference: {fileID: 0}
-    - target: {fileID: 1061022542422798332, guid: 23914c4366cb35147b3e26afe4405501,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1061022542422798334, guid: 23914c4366cb35147b3e26afe4405501,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -215,19 +210,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8925797699765439922, guid: cbeb50db775e2de40a3581acdea35717,
         type: 3}
-      propertyPath: _portalList.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925797699765439922, guid: cbeb50db775e2de40a3581acdea35717,
-        type: 3}
-      propertyPath: _puckList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925797699765439922, guid: cbeb50db775e2de40a3581acdea35717,
-        type: 3}
-      propertyPath: _portalList.Array.data[1]
+      propertyPath: _puckList.Array.data[0]
       value: 
-      objectReference: {fileID: 464080023}
+      objectReference: {fileID: 1499991835}
     - target: {fileID: 8925797699765439922, guid: cbeb50db775e2de40a3581acdea35717,
         type: 3}
       propertyPath: _portalList.Array.data[0]
@@ -235,9 +220,9 @@ PrefabInstance:
       objectReference: {fileID: 2071991236}
     - target: {fileID: 8925797699765439922, guid: cbeb50db775e2de40a3581acdea35717,
         type: 3}
-      propertyPath: _maxEnemyNum
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: _portalList.Array.data[1]
+      value: 
+      objectReference: {fileID: 464080023}
     - target: {fileID: 8925797699765439922, guid: cbeb50db775e2de40a3581acdea35717,
         type: 3}
       propertyPath: _portalList.Array.data[2]
@@ -248,11 +233,6 @@ PrefabInstance:
       propertyPath: _portalList.Array.data[3]
       value: 
       objectReference: {fileID: 23674997}
-    - target: {fileID: 8925797699765439922, guid: cbeb50db775e2de40a3581acdea35717,
-        type: 3}
-      propertyPath: _puckList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1499991835}
     - target: {fileID: 8925797699765439923, guid: cbeb50db775e2de40a3581acdea35717,
         type: 3}
       propertyPath: m_LocalPosition.x

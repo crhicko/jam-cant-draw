@@ -9,6 +9,10 @@ public class Spawner : MonoBehaviour
     private Vector2 _spawnZoneDimensions;
     private Vector2 _spawnDimensions;
 
+    public float _spawnTime;
+
+    public GameObject _spawnInstantiation;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +27,12 @@ public class Spawner : MonoBehaviour
     }
 
     public GameObject Spawn() {
-        return Instantiate(_spawn, gameObject.transform.position, Quaternion.identity);
+        StartCoroutine(SpawnTimer());
+        return _spawnInstantiation;
+    }
+
+    private IEnumerator SpawnTimer() {
+        yield return new WaitForSeconds(_spawnTime);
+        _spawnInstantiation = Instantiate(_spawn, gameObject.transform.position, Quaternion.identity);
     }
 }

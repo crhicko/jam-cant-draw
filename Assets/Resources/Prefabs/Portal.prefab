@@ -171,3 +171,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawn: {fileID: 5529545817047119272, guid: bda57c3a44b875a4aae4b0391eab294b, type: 3}
   _spawnZoneDimensions: {x: 0, y: 0}
+  _spawnTime: 5

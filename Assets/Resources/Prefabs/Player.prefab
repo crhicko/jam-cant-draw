@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7600594909835280438}
   - component: {fileID: 7600594909835280439}
   - component: {fileID: 3308415606216471163}
+  - component: {fileID: 946469122}
+  - component: {fileID: 946469123}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -31,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 7600594909835280432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.5}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.5}
   m_Children:
   - {fileID: 5485101251805975016}
   - {fileID: 580718171651322687}
@@ -147,21 +149,6 @@ MonoBehaviour:
     m_ActionId: 05889d85-c95c-485f-8acc-f4c017b56af3
     m_ActionName: Keyboard/RotateRight[/Keyboard/e]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7600594909835280436}
-        m_MethodName: OnMovement
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: a98de81b-b2de-48a7-a39e-7ef5c1903a3f
-    m_ActionName: Keyboard/Movement[/Keyboard/w,/Keyboard/a,/Keyboard/s,/Keyboard/d]
-  - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 9c16efb7-3763-4084-b0f5-e0430b2a52ef
     m_ActionName: Keyboard/ActivateTopFlipper[/Keyboard/1]
@@ -207,6 +194,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: bec0d1c2-baaf-4ff1-a681-2dd6e83cc6e7
     m_ActionName: Keyboard/Brake[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 69b9e312-8953-4efe-8e24-84b21db01c57
+    m_ActionName: Keyboard/NorthShield[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5fe1227a-3cda-4e44-a4bd-2c88fa382486
+    m_ActionName: Keyboard/EastShield[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6f2b3d04-3d80-434d-8ab5-07ece5f979e1
+    m_ActionName: Keyboard/SouthShield[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 95c32ce9-9165-472a-984f-d56da85bb131
+    m_ActionName: Keyboard/WestShield[/Keyboard/a]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Keyboard
@@ -285,6 +288,116 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!120 &946469122
+LineRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7600594909835280432}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.0669651
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_UseWorldSpace: 1
+  m_Loop: 0
+--- !u!114 &946469123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7600594909835280432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6459f77cc06c0bd478d71959f952d3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVelocity: 10
 --- !u!1001 &331526342173037024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -300,7 +413,17 @@ PrefabInstance:
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 7
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
@@ -350,52 +473,112 @@ PrefabInstance:
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_ActionId
-      value: a98de81b-b2de-48a7-a39e-7ef5c1903a3f
-      objectReference: {fileID: 0}
-    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
-      value: Keyboard/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-      objectReference: {fileID: 0}
-    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
       value: 9c16efb7-3763-4084-b0f5-e0430b2a52ef
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
       value: Keyboard/ActivateTopFlipper[/Keyboard/1]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
       value: b5ba5810-542d-41b8-a766-574f290992c8
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
       value: Keyboard/ActivateRightFlipper[/Keyboard/2]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
       value: e07cf025-e35e-40c4-b11b-269388416676
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
       value: Keyboard/ActivateBottomFlipper[/Keyboard/3]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
       value: bf553aa7-8c5a-44c6-82a1-ae283670a069
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
       value: Keyboard/ActivateLeftFlipper[/Keyboard/4]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: c3ec97d2-3237-484a-b8cf-4f7071d04c7f
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Keyboard/DragMovement[/Mouse/leftButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionId
+      value: bec0d1c2-baaf-4ff1-a681-2dd6e83cc6e7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionName
+      value: Keyboard/Brake[/Keyboard/space]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[8].m_ActionId
+      value: 69b9e312-8953-4efe-8e24-84b21db01c57
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[8].m_ActionName
+      value: Keyboard/NorthShield[/Keyboard/w]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[9].m_ActionId
+      value: 5fe1227a-3cda-4e44-a4bd-2c88fa382486
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[9].m_ActionName
+      value: Keyboard/EastShield[/Keyboard/d]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[10].m_ActionId
+      value: 6f2b3d04-3d80-434d-8ab5-07ece5f979e1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[10].m_ActionName
+      value: Keyboard/SouthShield[/Keyboard/s]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
+      value: 95c32ce9-9165-472a-984f-d56da85bb131
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
+      value: Keyboard/WestShield[/Keyboard/a]
       objectReference: {fileID: 0}
     - target: {fileID: 3740209268544801790, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
@@ -406,8 +589,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flipper
       value: 
-      objectReference: {fileID: 3311388958562235895, guid: 8656bef2f8c4b2d46affdb445ed998d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6668748396358857517, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -493,17 +675,27 @@ PrefabInstance:
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
@@ -553,52 +745,52 @@ PrefabInstance:
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_ActionId
-      value: a98de81b-b2de-48a7-a39e-7ef5c1903a3f
-      objectReference: {fileID: 0}
-    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
-      value: Keyboard/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-      objectReference: {fileID: 0}
-    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
       value: 9c16efb7-3763-4084-b0f5-e0430b2a52ef
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
       value: Keyboard/ActivateTopFlipper[/Keyboard/1]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
       value: b5ba5810-542d-41b8-a766-574f290992c8
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
       value: Keyboard/ActivateRightFlipper[/Keyboard/2]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
       value: e07cf025-e35e-40c4-b11b-269388416676
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
       value: Keyboard/ActivateBottomFlipper[/Keyboard/3]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
       value: bf553aa7-8c5a-44c6-82a1-ae283670a069
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
       value: Keyboard/ActivateLeftFlipper[/Keyboard/4]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: c3ec97d2-3237-484a-b8cf-4f7071d04c7f
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Keyboard/DragMovement[/Mouse/leftButton]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
@@ -625,6 +817,66 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionId
+      value: bec0d1c2-baaf-4ff1-a681-2dd6e83cc6e7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionName
+      value: Keyboard/Brake[/Keyboard/space]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[8].m_ActionId
+      value: 69b9e312-8953-4efe-8e24-84b21db01c57
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[8].m_ActionName
+      value: Keyboard/NorthShield[/Keyboard/w]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[9].m_ActionId
+      value: 5fe1227a-3cda-4e44-a4bd-2c88fa382486
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[9].m_ActionName
+      value: Keyboard/EastShield[/Keyboard/d]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[10].m_ActionId
+      value: 6f2b3d04-3d80-434d-8ab5-07ece5f979e1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[10].m_ActionName
+      value: Keyboard/SouthShield[/Keyboard/s]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
+      value: 95c32ce9-9165-472a-984f-d56da85bb131
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
+      value: Keyboard/WestShield[/Keyboard/a]
+      objectReference: {fileID: 0}
     - target: {fileID: 3740209268544801790, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_Name
@@ -634,8 +886,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flipper
       value: 
-      objectReference: {fileID: 3311388958562235895, guid: 8656bef2f8c4b2d46affdb445ed998d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6668748396358857517, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -721,12 +972,17 @@ PrefabInstance:
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 7
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
@@ -776,52 +1032,122 @@ PrefabInstance:
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_ActionId
-      value: a98de81b-b2de-48a7-a39e-7ef5c1903a3f
-      objectReference: {fileID: 0}
-    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
-      value: Keyboard/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-      objectReference: {fileID: 0}
-    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
       value: 9c16efb7-3763-4084-b0f5-e0430b2a52ef
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
       value: Keyboard/ActivateTopFlipper[/Keyboard/1]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
       value: b5ba5810-542d-41b8-a766-574f290992c8
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
       value: Keyboard/ActivateRightFlipper[/Keyboard/2]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
       value: e07cf025-e35e-40c4-b11b-269388416676
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
       value: Keyboard/ActivateBottomFlipper[/Keyboard/3]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
       value: bf553aa7-8c5a-44c6-82a1-ae283670a069
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
       value: Keyboard/ActivateLeftFlipper[/Keyboard/4]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: c3ec97d2-3237-484a-b8cf-4f7071d04c7f
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Keyboard/DragMovement[/Mouse/leftButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6889261269328616965}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnInput
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionId
+      value: bec0d1c2-baaf-4ff1-a681-2dd6e83cc6e7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionName
+      value: Keyboard/Brake[/Keyboard/space]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[8].m_ActionId
+      value: 69b9e312-8953-4efe-8e24-84b21db01c57
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[8].m_ActionName
+      value: Keyboard/NorthShield[/Keyboard/w]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[9].m_ActionId
+      value: 5fe1227a-3cda-4e44-a4bd-2c88fa382486
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[9].m_ActionName
+      value: Keyboard/EastShield[/Keyboard/d]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[10].m_ActionId
+      value: 6f2b3d04-3d80-434d-8ab5-07ece5f979e1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[10].m_ActionName
+      value: Keyboard/SouthShield[/Keyboard/s]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
+      value: 95c32ce9-9165-472a-984f-d56da85bb131
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
+      value: Keyboard/WestShield[/Keyboard/a]
       objectReference: {fileID: 0}
     - target: {fileID: 3740209268544801790, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
@@ -832,8 +1158,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flipper
       value: 
-      objectReference: {fileID: 3311388958562235895, guid: 8656bef2f8c4b2d46affdb445ed998d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6668748396358857517, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -924,7 +1249,17 @@ PrefabInstance:
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 7
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
@@ -974,52 +1309,112 @@ PrefabInstance:
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_ActionId
-      value: a98de81b-b2de-48a7-a39e-7ef5c1903a3f
-      objectReference: {fileID: 0}
-    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
-      value: Keyboard/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-      objectReference: {fileID: 0}
-    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
       value: 9c16efb7-3763-4084-b0f5-e0430b2a52ef
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
       value: Keyboard/ActivateTopFlipper[/Keyboard/1]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
       value: b5ba5810-542d-41b8-a766-574f290992c8
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
       value: Keyboard/ActivateRightFlipper[/Keyboard/2]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
       value: e07cf025-e35e-40c4-b11b-269388416676
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
       value: Keyboard/ActivateBottomFlipper[/Keyboard/3]
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
       value: bf553aa7-8c5a-44c6-82a1-ae283670a069
       objectReference: {fileID: 0}
     - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
       value: Keyboard/ActivateLeftFlipper[/Keyboard/4]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: c3ec97d2-3237-484a-b8cf-4f7071d04c7f
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Keyboard/DragMovement[/Mouse/leftButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionId
+      value: bec0d1c2-baaf-4ff1-a681-2dd6e83cc6e7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionName
+      value: Keyboard/Brake[/Keyboard/space]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[8].m_ActionId
+      value: 69b9e312-8953-4efe-8e24-84b21db01c57
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[8].m_ActionName
+      value: Keyboard/NorthShield[/Keyboard/w]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[9].m_ActionId
+      value: 5fe1227a-3cda-4e44-a4bd-2c88fa382486
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[9].m_ActionName
+      value: Keyboard/EastShield[/Keyboard/d]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[10].m_ActionId
+      value: 6f2b3d04-3d80-434d-8ab5-07ece5f979e1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[10].m_ActionName
+      value: Keyboard/SouthShield[/Keyboard/s]
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
+      value: 95c32ce9-9165-472a-984f-d56da85bb131
+      objectReference: {fileID: 0}
+    - target: {fileID: -7651934194635937379, guid: 9ef46d030932cda44a326c6d1fe97fa5,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
+      value: Keyboard/WestShield[/Keyboard/a]
       objectReference: {fileID: 0}
     - target: {fileID: 3740209268544801790, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
@@ -1030,8 +1425,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flipper
       value: 
-      objectReference: {fileID: 8581904785655879845, guid: 291f2d8fa87887840b451540091f5b5c,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6668748396358857517, guid: 9ef46d030932cda44a326c6d1fe97fa5,
         type: 3}
       propertyPath: m_LocalPosition.x

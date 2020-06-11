@@ -6,7 +6,8 @@ public enum HorseshoeState {
     Moving,
     Charging,
     WaitingToShoot,
-    Firing
+    Firing,
+    PostFireWait
 }
 
 public class HorseshoeShotController : MonoBehaviour
@@ -47,7 +48,7 @@ public class HorseshoeShotController : MonoBehaviour
         switch (horseshoeState)
         {
             case HorseshoeState.Moving:
-
+                rb.freezeRotation = false;
                 if(NeedsDestination()){
                     _destination = GenerateNewDestination();
                    // Debug.Log(_destination);
@@ -71,23 +72,32 @@ public class HorseshoeShotController : MonoBehaviour
             case HorseshoeState.Charging:
                // Debug.Log("begingernerating");
                 animator.SetTrigger("BeginGenerating");
+                if(_destination != Vector3.zero) {
+                    rb.velocity = Vector2.zero;
+                    rb.angularVelocity = 0f;
+                }
 
                 _destination = Vector3.zero;    //I dont like this, need to make cleaner
                 break;
             case HorseshoeState.WaitingToShoot:
                 animator.ResetTrigger("BeginGenerating");
                 animator.SetTrigger("ReadyToShoot");
+                rb.freezeRotation = true;
                 if(!_waiting)   //this is needed or else we will continuously invoke this due to update, want to find a better way to do ai that doesnt involve this
                     StartCoroutine(WaitToShoot());
                 // horseshoeState = HorseshoeState.Firing;
                 break;
             case HorseshoeState.Firing:
-                GameObject puck = Instantiate(projectile, transform.position + new Vector3(0, -0.6f, 0), Quaternion.identity);
-                puck.GetComponent<Rigidbody2D>().AddForce(faceDirection * 0.01f);
+                GameObject puck = Instantiate(projectile, transform.GetChild(0).position, Quaternion.identity);
+                GameManager.Instance._puckList.Add(puck);
+                puck.GetComponent<Rigidbody2D>().AddForce((gameObject.transform.position - goal.transform.position) * -0.01f);
                 //Debug.Log("howmuch is this firing");
                 animator.ResetTrigger("ReadyToShoot");
                 animator.SetTrigger("ReturnToIdle");
-                horseshoeState = HorseshoeState.Moving;
+                horseshoeState = HorseshoeState.PostFireWait;
+                break;
+            case HorseshoeState.PostFireWait:
+                StartCoroutine(WaitAfterFire());
                 break;
             default:
                 break;
@@ -114,5 +124,10 @@ public class HorseshoeShotController : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _waiting = false;
         horseshoeState = HorseshoeState.Firing;
+    }
+
+    private IEnumerator WaitAfterFire() {
+        yield return new WaitForSeconds(1.5f);
+        horseshoeState = HorseshoeState.Moving;
     }
 }

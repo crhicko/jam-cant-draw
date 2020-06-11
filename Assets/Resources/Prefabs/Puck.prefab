@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 1061022542422798332}
   - component: {fileID: 1061022542422798335}
   - component: {fileID: 1008426988}
+  - component: {fileID: 1084816732726576850}
+  - component: {fileID: 4693619480240757232}
+  - component: {fileID: 853873773055113340}
   m_Layer: 9
   m_Name: Puck
   m_TagString: Untagged
@@ -29,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1061022542422798331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,12 +97,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 61c069f04147890478b2bbc3fa5a8cbd, type: 3}
+  m_Sprite: {fileID: -7428164591969390153, guid: 61c069f04147890478b2bbc3fa5a8cbd,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -118,9 +122,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0040946403, y: 0}
   serializedVersion: 2
-  m_Radius: 0.95
+  m_Radius: 0.48729268
 --- !u!114 &1008426988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,4 +137,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6459f77cc06c0bd478d71959f952d3b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxVelocity: 10
+  maxVelocity: 5
+--- !u!114 &1084816732726576850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061022542422798331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fe6861c7af7a54dab05f00967cdcef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _team: 1
+--- !u!114 &4693619480240757232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061022542422798331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a7e6ef19138b142a8e149cc381fd4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyPuck: {fileID: -7428164591969390153, guid: 61c069f04147890478b2bbc3fa5a8cbd,
+    type: 3}
+  _playerPuck: {fileID: -8916720467403061674, guid: 61c069f04147890478b2bbc3fa5a8cbd,
+    type: 3}
+  _maxNumHits: 3
+--- !u!114 &853873773055113340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061022542422798331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc4dd511bfe7ca4cacc74a6272769df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fadeOutTime: 3
+  _material: {fileID: 2100000, guid: 611c53cf1bcd680419b649aa20d7b8ed, type: 2}
+  _dissolvingSprite: {fileID: -1704829556322867470, guid: 61c069f04147890478b2bbc3fa5a8cbd,
+    type: 3}

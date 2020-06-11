@@ -14,11 +14,13 @@ public class PuckController : MonoBehaviour
     [SerializeField]
     private int _maxNumHits;
 
+    public GameObject Player;
+
 
     private int _numHits = 0;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         cldr = GetComponent<CircleCollider2D>();
         _teamController = GetComponent<TeamController>();
@@ -33,14 +35,16 @@ public class PuckController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Collisition Detected");
-        if(_teamController.GetTeam() == Team.Enemy) {
-            if(other.gameObject.GetComponent<TeamController>() != null && other.gameObject.GetComponent<TeamController>().GetTeam() == Team.Player)
-                ChangeTeam(Team.Player);
+        Debug.Log("Collisition Detected with " + other.gameObject.name);
+        // if(_teamController.GetTeam() == Team.Enemy) {
+        //     if(other.gameObject.GetComponent<TeamController>() != null && other.gameObject.GetComponent<TeamController>().GetTeam() == Team.Player)
+        //         ChangeTeam(Team.Player);
+        // }
+        if(_teamController.GetTeam() == Team.Enemy && other.gameObject.name.Contains("Player")) {
+            other.gameObject.GetComponent<PlayerShotController>().AddAmmo(1);
+            Destroy(gameObject);
         }
-        else if(_teamController.GetTeam() == Team.Player) {
 
-        }
         _numHits++;
         if(_numHits == _maxNumHits) {
             Debug.Log("going to fade");
@@ -48,14 +52,17 @@ public class PuckController : MonoBehaviour
         }
     }
 
-    private void ChangeTeam(Team team) {
-        Debug.Log("Changing Team to " + team);
+    public void ChangeTeam(Team team) {
+        Debug.Log("Changing Team to " + team + _teamController);
         _teamController.SetTeam(team);
         if(team == Team.Player) {
+            gameObject.layer = 11;
             _spr.sprite = _playerPuck;
+            // Physics2D.IgnoreCollision(Player.GetComponent<BoxCollider2D>(), cldr);
         }
         else if(team == Team.Enemy) {
             _spr.sprite = _enemyPuck;
+            //If things arent colliding on this you need to change the layer
         }
     }
 }

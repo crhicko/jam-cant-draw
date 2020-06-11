@@ -11,7 +11,7 @@
                     "id": "7376a686-72e4-474c-a9ed-2ab4611c5035",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)"
+                    "interactions": "Press"
                 },
                 {
                     "name": "RotateRight",
@@ -97,6 +97,14 @@
                     "name": "WestShield",
                     "type": "Button",
                     "id": "95c32ce9-9165-472a-984f-d56da85bb131",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "e3d78670-1d31-4d6e-9b87-de21660b790f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -232,6 +240,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "WestShield",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "68480d8a-57bb-44a9-a95f-c2d230bd12fd",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
